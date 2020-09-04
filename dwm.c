@@ -1944,6 +1944,9 @@ old_main(int argc, char *argv[])
 }
 
 
+
+/* these two commands are a workaround for the 
+ * difficulty of getting certain values from go */
 void try_open_display(void) {
 	if (!(dpy = XOpenDisplay(NULL)))
 		die("dwm: cannot open display");
